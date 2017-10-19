@@ -1,0 +1,1 @@
+find -type f -name '*.flac' | while read f; do avconv -i $f ${f%.flac}.wav; done
